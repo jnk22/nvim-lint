@@ -180,6 +180,7 @@ Other dedicated linters that are built-in are:
 | [mlint][34]                            | `mlint`                |
 | [Mypy][11]                             | `mypy`                 |
 | [Nagelfar][nagelfar]                   | `nagelfar`             |
+| [Namcap][namcap]                       | `namcap`               |
 | [Nix][nix]                             | `nix`                  |
 | [npm-groovy-lint][npm-groovy-lint]     | `npm-groovy-lint`      |
 | [oelint-adv][oelint-adv]               | `oelint-adv`           |
@@ -673,3 +674,4 @@ vimcats -t -f lua/lint.lua lua/lint/parser.lua > doc/lint.txt
 [mado]: https://github.com/akiomik/mado
 [rumdl]: https://github.com/rvben/rumdl
 [ls-lint]: https://github.com/loeffel-io/ls-lint
+[namcap]: https://gitlab.archlinux.org/pacman/namcap
