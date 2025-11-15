@@ -1,8 +1,12 @@
+-- TODO: Get code.
+
 return {
-  cmd = 'cmake-lint',
-  args = {'--quiet'},
+  cmd = "cmake-lint",
+  args = { "--suppress-decorations" },
   stdin = false,
-  parser = require('lint.parser').from_errorformat('%f:%l,%c: %m', {
-    source = 'cmake-lint'
-  })
+  ignore_exitcode = true,
+  parser = require("lint.parser").from_errorformat("%f:%l: %m", {
+    source = "cmake-lint",
+    severity = vim.diagnostic.severity.WARN,
+  }),
 }
