@@ -1,4 +1,4 @@
-local pattern = "%(stdin%):(%d+):(%d+):%s*([A-Z%d]+)%s+(.+)"
+local pattern = "%(stdin%):(%d+):(%d+):%s*([%u%d]+)%s+(.+)"
 local groups = { "lnum", "col", "code", "message" }
 local defaults = { ["source"] = "mado", ["severity"] = vim.diagnostic.severity.WARN }
 
